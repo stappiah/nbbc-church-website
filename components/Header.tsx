@@ -17,7 +17,7 @@ export default function Header() {
         
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <img src="/images/Logo.png" alt="Grace Life Church Logo" className="h-10 w-auto" />
+          <img src="/images/Logo.png" alt="New Breed Bible Church Logo" className="h-10 w-auto" />
           <span className="text-lg font-display font-bold text-[#0B2944] tracking-tight">
             NBBC
           </span>
