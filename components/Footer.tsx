@@ -51,7 +51,7 @@ export default function Footer() {
               </svg>
             </div>
             <div>
-              <span className="block text-brand-deep font-display font-semibold text-lg">Grace Life Church</span>
+              <span className="block text-brand-deep font-display font-semibold text-lg">New Breed Bible Church</span>
             </div>
           </div>
           <p className="text-sm mt-2">
@@ -109,7 +109,7 @@ export default function Footer() {
 
       <div className="border-t border-gray-700 bg-gray-900">
         <div className="container py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
-          <span>© {year} Grace Life Church. All rights reserved.</span>
+          <span>© {year} New Breed Bible Church. All rights reserved.</span>
           <span className="mt-2 md:mt-0">Built with love • Accessibility friendly</span>
         </div>
       </div>
