@@ -40,7 +40,7 @@ export default function Home() {
 
           {/* Subheading */}
           <p className="mt-6 text-lg md:text-xl max-w-2xl text-white/90">
-            Welcome to Grace Life Church — a warm, inviting community where faith, service, and relationships grow together. Join us this Sunday!
+            Welcome to New Breed Bible Church — a warm, inviting community where faith, service, and relationships grow together. Join us this Sunday!
           </p>
 
           {/* Call-to-Actions */}
