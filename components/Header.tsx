@@ -24,7 +24,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden items-center gap-6">
           {NAV.map((item) => (
             <Link
               key={item.href}
@@ -44,7 +44,7 @@ export default function Header() {
         </nav>
 
         {/* Mobile Toggle */}
-        <div className="md:hidden relative" ref={navRef}>
+        <div className="relative" ref={navRef}>
           <button
             aria-label="Toggle menu"
             aria-expanded={open}
@@ -73,7 +73,7 @@ export default function Header() {
 
           {/* Mobile Menu */}
           <div
-            className={`absolute top-full right-0 w-64 bg-white shadow-lg rounded-b-xl border border-t-0 overflow-hidden transition-all duration-300 ease-in-out md:hidden ${
+            className={`absolute top-full right-0 w-64 bg-white shadow-lg rounded-b-xl border border-t-0 overflow-hidden transition-all duration-300 ease-in-out ${
               open ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-4"
             }`}
           >
@@ -114,16 +114,27 @@ function useOnClickOutside<T extends HTMLElement = HTMLElement>(
 ) {
   useEffect(() => {
     const listener = (event: Event) => {
-      if (!ref.current || ref.current.contains(event.target as Node)) {
+      const el = ref?.current;
+      // Do nothing if clicking ref's element or descendent elements
+      if (!el || el.contains((event?.target as Node) || null)) {
         return
       }
       handler(event)
     }
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        handler(event);
+      }
+    };
+
     document.addEventListener('mousedown', listener)
     document.addEventListener('touchstart', listener)
+    document.addEventListener('keydown', handleKeyDown);
     return () => {
       document.removeEventListener('mousedown', listener)
       document.removeEventListener('touchstart', listener)
+      document.removeEventListener('keydown', handleKeyDown);
     }
   }, [ref, handler])
 }

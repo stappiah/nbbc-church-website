@@ -42,20 +42,17 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-800 text-gray-300 mt-16">
-      <div className="container py-12 grid lg:grid-cols-12 gap-8">
+      <div className="container mx-auto px-6 py-16 grid md:grid-cols-2 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-4">
-          <div className="flex items-center gap-3 mb-4 text-white">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-400 flex items-center justify-center shadow">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="M12 3v18M3 12h18" stroke="#073047" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
-            <div>
-              <span className="block text-brand-deep font-display font-semibold text-lg">New Breed Bible Church</span>
-            </div>
-          </div>
-          <p className="text-sm mt-2">
-            A community of faith, hope & joy. Join us for worship, service and community.
+          <Link href="/" className="flex items-center gap-3">
+            <img src="/images/Logo.png" alt="New Breed Bible Church Logo" className="h-10 w-auto" />
+            <span className="text-lg font-display font-bold text-white tracking-tight">
+              New Breed Bible Church
+            </span>
+          </Link>
+          <p className="text-sm mt-4 text-gray-400">
+            A community of faith, hope & joy. Join us for worship, service, and
+            community.
           </p>
           <div className="mt-6">
             <h4 className="font-semibold text-white mb-3">Connect With Us</h4>
@@ -84,9 +81,9 @@ export default function Footer() {
 
         <div className="lg:col-span-3">
           <h4 className="font-semibold text-white mb-4">Get In Touch</h4>
-          <p className="text-sm">123 Faith Lane, Takoradi</p>
-          <p className="text-sm mt-1">Phone: +233 55 187 8700</p>
-          <p className="text-sm mt-1">Email: hello@gracelife.church</p>
+          <p className="text-sm">123 Faith Lane, Takoradi, Ghana</p>
+          <p className="text-sm mt-2">Phone: +233 55 187 8700</p>
+          <p className="text-sm mt-2">Email: hello@gracelife.church</p>
         </div>
 
         <div className="lg:col-span-3">
@@ -97,18 +94,18 @@ export default function Footer() {
               aria-label="Email address" 
               placeholder="Your email" 
               type="email"
-              defaultValue={email}
+              value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
               className="px-3 py-2 rounded-lg border-gray-600 bg-gray-700 text-white w-full text-sm focus:ring-2 focus:ring-yellow-300 focus:border-yellow-300 outline-none transition-shadow"
             />
-            <button type="submit" className="btn btn-primary text-sm whitespace-nowrap">Subscribe</button>
+            <button type="submit" className="px-5 py-2 rounded-lg bg-yellow-500 text-white font-semibold text-sm whitespace-nowrap hover:bg-yellow-400 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">Subscribe</button>
           </form>
         </div>
       </div>
 
       <div className="border-t border-gray-700 bg-gray-900">
-        <div className="container py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+        <div className="container mx-auto px-6 py-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
           <span>© {year} New Breed Bible Church. All rights reserved.</span>
           <span className="mt-2 md:mt-0">Built with love • Accessibility friendly</span>
         </div>

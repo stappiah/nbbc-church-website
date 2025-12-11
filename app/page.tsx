@@ -63,7 +63,7 @@ export default function Home() {
 
           {/* Next Service Info */}
           <p className="mt-6 text-sm text-white/80">
-            <strong>Next Service:</strong> Sunday at 9:00 & 11:00 AM — drop by or plan your visit.
+            <strong>Next Service:</strong> Sunday at 1:00 PM to 4:00 PM — drop by or plan your visit.
           </p>
 
         </div>
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
           <div className="text-center">
             <h3 className="font-semibold text-lg text-brand-deep">Worship Service Times</h3>
-            <p className="text-5xl font-display font-bold text-yellow-500 mt-2">9:00 <span className="text-3xl">&</span> 11:00 AM</p>
+            <p className="text-5xl font-display font-bold text-yellow-500 mt-2">1:00 PM<span className="text-3xl"> to</span> 4:00 AM</p>
             <p className="mt-2 text-gray-500">Every Sunday</p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
               </div>
               <h3 className="mt-4 font-semibold text-xl text-brand-deep">Join a Group</h3>
               <p className="text-sm text-gray-600 mt-2">Find meaningful relationships and grow in your faith by joining one of our small groups for all ages.</p>
-              <Link href="/ministries" className="mt-4 inline-block text-sm font-semibold text-yellow-500 hover:text-yellow-600">
+              <Link href="/church-groups" className="mt-4 inline-block text-sm font-semibold text-yellow-500 hover:text-yellow-600">
                 Find a Group <span className="group-hover:ml-1 transition-all">→</span>
               </Link>
             </div>
