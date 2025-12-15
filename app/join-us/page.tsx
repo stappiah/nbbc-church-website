@@ -38,7 +38,7 @@ export default function JoinUs() {
                 Life is better together. Find a small group where you can build relationships, grow in your faith, and do life with others.
               </p>
             </div>
-            <Link href="#" className="block bg-gray-100 p-4 text-center font-semibold text-blue-600 group-hover:bg-blue-50 transition-colors">
+            <Link href="/church-groups" className="block bg-gray-100 p-4 text-center font-semibold text-blue-600 group-hover:bg-blue-50 transition-colors">
               Find a Group <ArrowRight className="inline h-4 w-4" />
             </Link>
           </div>
@@ -52,7 +52,7 @@ export default function JoinUs() {
                 Make a difference by using your gifts to serve others. Join a team and be a part of what God is doing in our church and community.
               </p>
             </div>
-            <Link href="#" className="block bg-gray-100 p-4 text-center font-semibold text-blue-600 group-hover:bg-blue-50 transition-colors">
+            <Link href="/church-groups" className="block bg-gray-100 p-4 text-center font-semibold text-blue-600 group-hover:bg-blue-50 transition-colors">
               Explore Teams <ArrowRight className="inline h-4 w-4" />
             </Link>
           </div>

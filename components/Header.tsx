@@ -24,7 +24,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-6">
           {NAV.map((item) => (
             <Link
               key={item.href}
@@ -43,8 +43,8 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Mobile Toggle */}
-        <div className="relative" ref={navRef}>
+        {/* Mobile & Tablet Toggle */}
+        <div className="relative lg:hidden" ref={navRef}>
           <button
             aria-label="Toggle menu"
             aria-expanded={open}
