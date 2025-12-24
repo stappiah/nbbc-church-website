@@ -5,4 +5,12 @@ export interface Group {
   tagline?: string;
   description?: string;
   meetingSchedule?: string;
+  location?: string;
+}
+
+export interface GalleryItem {
+  src: string;
+  alt: string;
+  title: string;
+  description: string;
 }

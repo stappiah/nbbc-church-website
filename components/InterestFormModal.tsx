@@ -24,6 +24,7 @@ export const InterestFormModal: React.FC<InterestFormModalProps> = ({
 }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone_number, setPhone_number] = useState('');
 
   // Reset form when modal is closed or group changes
   useEffect(() => {
@@ -58,6 +59,18 @@ export const InterestFormModal: React.FC<InterestFormModalProps> = ({
           variant="outlined"
           value={name}
           onChange={(e) => setName(e.target.value)}
+        />
+        <TextField
+          autoFocus
+          required
+          margin="dense"
+          id="phone_number"
+          label="Phone Number"
+          type="text"
+          fullWidth
+          variant="outlined"
+          value={phone_number}
+          onChange={(e) => setPhone_number(e.target.value)}
         />
         <TextField
           required

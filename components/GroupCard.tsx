@@ -17,6 +17,7 @@ export const GroupCard: React.FC<GroupCardProps> = ({ group, onInterestClick }) 
         
         <div className="text-sm text-gray-500 space-y-2 mb-6">
           <p><strong>Meeting Schedule:</strong> {group.meetingSchedule}</p>
+          <p><strong>Location:</strong> {group.location}</p>
         </div>
 
         <button
