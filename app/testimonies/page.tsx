@@ -155,8 +155,12 @@ export default function Testimonies() {
                 <input type="text" id="share-name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-2" />
               </div>
               <div>
-                <label htmlFor="share-email" className="block text-sm font-medium text-gray-700">Email Address (Optional)</label>
-                <input type="email" id="share-email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-2" />
+                <label htmlFor="share-location" className="block text-sm font-medium text-gray-700">Location</label>
+                <input type="text" id="share-location" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-2" />
+              </div>
+              <div>
+                <label htmlFor="share-email" className="block text-sm font-medium text-gray-700">Phone Number (Optional)</label>
+                <input type="tel" id="share-email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 px-4 py-2" />
               </div>
               <div>
                 <label htmlFor="share-story" className="block text-sm font-medium text-gray-700">Your Testimony</label>
