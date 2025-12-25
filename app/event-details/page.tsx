@@ -62,7 +62,7 @@ export default function EventDetails() {
                         <Image src="/images/apostle.jpg" alt="Speaker 2" width={80} height={80} className="rounded-full" />
                         <div>
                             <h4 className="font-bold">Guest Minister</h4>
-                            <p className="text-sm text-gray-600">Apostle Joshua Serlman</p>
+                            <p className="text-sm text-gray-600">Apostle Joshua Selman</p>
                         </div>
                     </div>
                 </div>
